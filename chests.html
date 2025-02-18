@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baús Especiais</title>
+    <link rel="stylesheet" href="chest.css">
+    <img src="Figs/HelloKitty.gif" alt="HelloKitty" class="gif-local">
+    <style>
+        body {
+            background-image: url('Figs/backgroundTWO.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha um baú e veja o segredo!</h1>
+    
+    <div class="chests-container">
+        <!-- Painel 1 -->
+        <div class="chest-panel" data-id="1">
+            <p class="chest-description">Sobre você e seu aniversário</p>
+            <img src="Figs/Chest.png" alt="Baú 1" class="chest-image">
+            <button class="open-chest-button">Abrir Baú</button>
+        </div>
+        
+        <!-- Painel 2 -->
+        <div class="chest-panel" data-id="2">
+            <p class="chest-description">Sobre nós</p>
+            <img src="Figs/Chest.png" alt="Baú 2" class="chest-image">
+            <button class="open-chest-button">Abrir Baú</button>
+        </div>
+        
+        <!-- Painel 3 -->
+        <div class="chest-panel" data-id="3">
+            <p class="chest-description">Sobre o futuro</p>
+            <img src="Figs/Chest.png" alt="Baú 3" class="chest-image">
+            <button class="open-chest-button">Abrir Baú</button>
+        </div>
+    </div>
+    
+    <!-- Container da Descrição e Senha -->
+    <div class="description-container" id="description-container">
+        <h2 id="chest-description"></h2>
+        <input type="text" id="chest-password" placeholder="Digite a senha" />
+        <button id="submit-password" class="button">Confirmar</button>
+    </div>
+
+    <!-- Modal para Exibir Texto ao Acertar a Senha -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <p id="modal-text"></p>
+            <button id="close-modal">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Botões Voltar e Finalizar abaixo dos baús -->
+    <div class="buttons-container">
+        <a href="Aniversario Namorada.html"><button id="back-button">Voltar</button></a>
+        <button id="finalizar-button">Finalizar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
